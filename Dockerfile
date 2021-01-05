@@ -1,6 +1,6 @@
 FROM python:3-alpine
 WORKDIR /usr/src/app
-EXPOSE 80
+EXPOSE 8085
 COPY requirements.txt .
 RUN pip install -qr requirements.txt
 COPY app.py .
