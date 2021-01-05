@@ -18,7 +18,7 @@ pipeline {
                 stage('Run Docker Image'){
             steps {
                 sh '''
-                docker run -d -p 5000:8081 my-simple-web-app
+                docker run -d -p 5000:80 my-simple-web-app
                 '''
             }
         }
